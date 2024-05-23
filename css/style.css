@@ -1,12 +1,16 @@
 /* html {
   font-size: 62.5%;
 } */
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   margin: 0;
   background-color: antiquewhite;
 }
 .header {
+  z-index: 5;
   display: flex;
   /* justify-content: space-evenly; */
   background-color: red;
@@ -19,7 +23,7 @@ body {
   top: 0;
 }
 .header div {
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
   text-align: center;
   /* padding: 0 10rem; */
   /* background-color: blue; */
@@ -67,15 +71,55 @@ body {
   box-sizing: border-box;
 }
 .banner {
+  position: relative;
   box-sizing: border-box;
   width: 790px;
   height: 400px;
   margin: 0 5px 0;
 }
 .banner img {
-  /* max-width: 790px; */
+  max-width: 790px;
   width: inherit;
   border-radius: 4px;
+}
+.bannerslide {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .banner_list {
   display: flex;

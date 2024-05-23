@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="header">
+      <div class="menu"></div>
       <div class="Home"><a href="">Home</a></div>
       <div class="Search">
         <input
@@ -22,11 +23,47 @@
     </div>
     <div class="container">
       <div class="banner">
-        <img
-          src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
-          alt="banner"
-        />
+        <div class="bannerslide fade">
+          <img
+            src="./img/asus_vivobook_16_-_m1605ya_mb303w_-_slider_daa7069486214947aa007719d51bf7d8.webp"
+            alt="banner"
+          />
+        </div>
+        <div class="bannerslide fade">
+          <img
+            src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
+            alt="banner"
+          />
+        </div>
+        <div class="bannerslide fade">
+          <img
+            src="./img/man_hinh_slider_295b45dfd3ee4f3cb6a2632ab018e588.webp"
+            alt="banner"
+          />
+        </div>
+        <a class="prev" onclick="plusSlide(-1)">a</a>
+        <a class="next" onclick="plusSlide(1)">b</a>
       </div>
+      <script>
+      let slideIndex = 1;
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("bannerslide");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1
+          }
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 10000);
+        }
+        showSlides(slideIndex);
+        function plusSlide(n) {
+          showSlides((slideIndex += n));
+        }
+      </script>
       <div class="banner_list">
         <div class="bl_items">
           <img
