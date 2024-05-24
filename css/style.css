@@ -7,13 +7,14 @@
 body {
   height: 100vh;
   margin: 0;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 .header {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 5;
   display: flex;
   /* justify-content: space-evenly; */
-  background-color: red;
+  background-color: rgba(215, 5, 5, 0.785);
   height: 8%;
   width: 100vw;
   align-items: center;
@@ -71,11 +72,12 @@ body {
   cursor: pointer;
 }
 .menu_list {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   position: fixed;
   top: 0;
   bottom: 0;
   margin: 58px 0 0;
-  width: 15%;
+  width: 250px;
   background-color: white;
   display: none;
 }
@@ -119,6 +121,8 @@ a {
   margin: 0 5px 0;
 }
 .banner img {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   max-width: 790px;
   width: inherit;
   border-radius: 4px;
@@ -176,18 +180,21 @@ a {
   height: 190px;
 }
 .banner_list img {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 100%;
   height: 100%;
   border-radius: 4px;
 }
 .product {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   box-sizing: border-box;
   width: 800px;
   height: 468px;
   margin: 10px auto 20px;
   /* border: 1px solid #888888; */
   border-radius: 4px;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
 }
 .pr_heading {
   display: flex;
@@ -229,7 +236,9 @@ a {
   width: 188px;
   height: 400px;
   border-radius: 4px;
-  border: 1px solid #c6c6c6be;
+  /* border: 1px solid #c6c6c6be; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .pr_preview {
   box-sizing: border-box;
