@@ -3,216 +3,243 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Shop Computer</title>
   </head>
   <body>
-    <div class="header">
-      <div class="menu"></div>
-      <div class="Home"><a href="">Home</a></div>
-      <div class="Search">
-        <input
-          id="search"
-          type="text"
-          placeholder="Tìm kiếm"
-          aria-label="Tìm kiếm"
-        />
+      <div class="header">
+        <div class="menu hover"><a onclick="showmenu(1)"><i class="fa-solid fa-bars"></i></a></div>
+        <div class="Home hover"><a href=""><i class="fa-solid fa-house"></i>Home</a></div>
+        <div class="Search">
+          <input
+            id="search"
+            type="text"
+            placeholder="Tìm kiếm"
+            aria-label="Tìm kiếm"
+          />
+        </div>
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="about hover"><a href="">About us</a></div>
+        <div class="contact hover"><a href="">Contact</a></div>
+        <div class="giohang hover"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></div>
+        <div class="Login hover"><a href="./login.html">Login</a></div>
       </div>
-      <button class="search-button"></button>
-      <div class="Login"><a href="./login.html">Login</a></div>
-    </div>
-    <div class="container">
-      <div class="banner">
-        <div class="bannerslide fade">
-          <img
-            src="./img/asus_vivobook_16_-_m1605ya_mb303w_-_slider_daa7069486214947aa007719d51bf7d8.webp"
-            alt="banner"
-          />
+      <div class="main_content">
+        <div class="menu_list">
+          <ul>
+            <li><a href="">Laptop gaming</a></li>
+            <li><a href="">Laptop văn phòng</a></li>
+          </ul>
         </div>
-        <div class="bannerslide fade">
-          <img
-            src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
-            alt="banner"
-          />
-        </div>
-        <div class="bannerslide fade">
-          <img
-            src="./img/man_hinh_slider_295b45dfd3ee4f3cb6a2632ab018e588.webp"
-            alt="banner"
-          />
-        </div>
-        <a class="prev" onclick="plusSlide(-1)">a</a>
-        <a class="next" onclick="plusSlide(1)">b</a>
-      </div>
-      <script>
-      let slideIndex = 1;
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("bannerslide");
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        <script>
+          let press = 0;
+          function showmenu(n){
+            let menu = document.getElementsByClassName("menu_list");
+            press = press + n;
+            if(press%2 != 0 ){
+              menu[0].style.display = "block";
+            }
+            else{
+              menu[0].style.display = "none";
+            }
           }
-          slideIndex++;
-          if (slideIndex > slides.length) {
-            slideIndex = 1
-          }
-          slides[slideIndex-1].style.display = "block";
-          setTimeout(showSlides, 10000);
-        }
-        showSlides(slideIndex);
-        function plusSlide(n) {
-          showSlides((slideIndex += n));
-        }
-      </script>
-      <div class="banner_list">
-        <div class="bl_items">
-          <img
-            src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
-            alt=""
-          />
-        </div>
-        <div class="bl_items">
-          <img
-            src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
-            alt=""
-          />
-        </div>
-        <div class="bl_items">
-          <img
-            src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <div class="product">
-      <div class="pr_heading">
-        <div class="head_boxleft">
-          <h2>Laptop gaming</h2>
-        </div>
-        <div class="head_boxringht">
-          <a class="button_more" href="">Xem tất cả</a>
-        </div>
-      </div>
-      <div class="pr_content">
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name">
-                <a href="">Product name</a>
-              </h3>
-              <div class="pr_compare_price"><del>12.000.000₫</del></div>
-              <div class="pr_price">
-                <span class="pr_price_highlight">11.000.000₫</span>
+        </script>
+        <div class="pr_container">
+          <div class="container">
+            <div class="banner">
+              <div class="bannerslide fade">
+                <img
+                  src="./img/asus_vivobook_16_-_m1605ya_mb303w_-_slider_daa7069486214947aa007719d51bf7d8.webp"
+                  alt="banner"
+                />
               </div>
-              <div class="pr_rate"><span class="rate_number">0.0</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="product">
-      <div class="pr_heading">
-        <div class="head_boxleft">
-          <h2>Laptop văn phòng</h2>
-        </div>
-        <div class="head_boxringht">
-          <a class="button_more" href="">Xem tất cả</a>
-        </div>
-      </div>
-      <div class="pr_content">
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name"><a href="">Product name</a></h3>
-              <div class="pr_compare_price"></div>
-              <div class="pr_price"></div>
-              <div class="pr_rate"><span class="rate_number"></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="pr_case">
-          <div class="pr_info">
-            <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
-            <div class="pr_detail">
-              <div class="pr_label"></div>
-              <h3 class="pr_name">
-                <a href="">Product name</a>
-              </h3>
-              <div class="pr_compare_price"><del>12.000.000₫</del></div>
-              <div class="pr_price">
-                <span class="pr_price_highlight">11.000.000₫</span>
+              <div class="bannerslide fade">
+                <img
+                  src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
+                  alt="banner"
+                />
               </div>
-              <div class="pr_rate"><span class="rate_number">0.0</span></div>
+              <div class="bannerslide fade">
+                <img
+                  src="./img/man_hinh_slider_295b45dfd3ee4f3cb6a2632ab018e588.webp"
+                  alt="banner"
+                />
+              </div>
+              <a class="prev" onclick="plusSlide(-1)"><i class="fa-solid fa-chevron-left"></i></a>
+              <a class="next" onclick="plusSlide(1)"><i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <script>
+            let slideIndex = 1;
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("bannerslide");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                  slideIndex = 1
+                }
+                slides[slideIndex-1].style.display = "block";
+                setTimeout(showSlides, 10000);
+              }
+              showSlides(slideIndex);
+              function plusSlide(n) {
+                showSlides((slideIndex += n));
+              }
+            </script>
+            <div class="banner_list">
+              <div class="bl_items">
+                <img
+                  src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
+                  alt=""
+                />
+              </div>
+              <div class="bl_items">
+                <img
+                  src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
+                  alt=""
+                />
+              </div>
+              <div class="bl_items">
+                <img
+                  src="./img/gearvn-laptop-gaming-slider_4419ba0801564e6e8a7540c8dbdc8c41.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="pr_heading">
+              <div class="head_boxleft">
+                <h2>Laptop gaming</h2>
+              </div>
+              <div class="head_boxringht">
+                <a class="button_more" href="">Xem tất cả</a>
+              </div>
+            </div>
+            <div class="pr_content">
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name">
+                      <a href="">Product name</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>12.000.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">11.000.000₫</span>
+                    </div>
+                    <div class="pr_rate"><span class="rate_number">0.0</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="pr_heading">
+              <div class="head_boxleft">
+                <h2>Laptop văn phòng</h2>
+              </div>
+              <div class="head_boxringht">
+                <a class="button_more" href="">Xem tất cả</a>
+              </div>
+            </div>
+            <div class="pr_content">
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name"><a href="">Product name</a></h3>
+                    <div class="pr_compare_price"></div>
+                    <div class="pr_price"></div>
+                    <div class="pr_rate"><span class="rate_number"></span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview"><img src="./img/product.jpg" alt="" /></div>
+                  <div class="pr_detail">
+                    <div class="pr_label"></div>
+                    <h3 class="pr_name">
+                      <a href="">Product name</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>12.000.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">11.000.000₫</span>
+                    </div>
+                    <div class="pr_rate"><span class="rate_number">0.0</span></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        </div>
       </div>
-    </div>
-    </div>
   </body>
 </html>
