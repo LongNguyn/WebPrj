@@ -1,0 +1,60 @@
+h3{
+    font-size: 13px;
+}
+.container {
+    width: 808px;
+    height: 800px;
+  }
+  .product{
+    width: 808px;
+    height: 800px;
+  }
+  .khung2{
+    display: flex;
+  }
+.pr_rate .rate_number{
+    display: inline-flex;
+    color: rgb(239, 102, 33);
+    font-size: 15px;
+}
+.pr_rate span{
+    color: #6D6E72;
+    font-weight: 400;
+}
+.pr_compare_price{
+    font-weight: 400;
+    line-height: 16px;
+    color: #6D6E72;
+}
+.pr_price .pr_price_highlight{
+    color: rgb(245, 72, 42);
+    font-size: 18px;
+}
+.pr_price .sale{
+    font-size: 15px;
+    line-height: 15px;
+    padding: 0 2px;
+    margin-left: 6px;
+    background: #FFEDED;
+    border-radius: 2px;
+    color: #E30019;
+    border: 1px solid #E30019;
+}
+.data{
+    font-size: 9px;
+}
+.data svg{
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+svg{
+    overflow: hidden;
+    vertical-align: middle;
+}
+.data .chip{
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 2px;
+    margin-right: 10px;
+}
