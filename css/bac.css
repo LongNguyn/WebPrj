@@ -1,17 +1,50 @@
-h3{
+.pr_name a{
     font-size: 13px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
-.container {
-    width: 808px;
-    height: 800px;
-  }
-  .product{
-    width: 808px;
-    height: 800px;
-  }
-  .khung2{
+.pr_case{
+    box-sizing: border-box;
+    height: 480px;
+    width: 200px;
+    padding: 0 6px;
+}
+.pr_info{
+    box-sizing: border-box;
+    width: 188px;
+    height: 420px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product{
+    margin-top: 90px;
+    height: auto;
+}
+.khung2{
     display: flex;
-  }
+}
+.pr_label{
+    width: 0;
+    height: 0;
+}
+.pr_content{
+    box-sizing: border-box;
+    height: 440px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.op{
+    background: #ECECEC;
+    border-radius: 4px;
+    color: #6D6E72;
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
 .pr_rate .rate_number{
     display: inline-flex;
     color: rgb(239, 102, 33);
@@ -40,8 +73,15 @@ h3{
     color: #E30019;
     border: 1px solid #E30019;
 }
+.chip .chipcon{
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 2px;
+    margin-right: 10px
+}
 .data{
-    font-size: 9px;
+    font-size: 7px;
 }
 .data svg{
     width: 10px;
