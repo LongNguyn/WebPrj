@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: seagreen;
+    background: rgba(249, 8, 8, 0.555);
     background-size: cover;
     background-position: center;
 }
@@ -101,4 +101,9 @@ body{
 }
 .SignUp-link p a:hover{
     text-decoration: underline;
+}
+
+#signUpForm,
+#forgotPasswordForm{
+    display: none;
 }
