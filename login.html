@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="/WebPrj/css/stylelogin.css">
     <link rel="stylesheet" href="/WebPrj/font/themify-icons-font/themify-icons/themify-icons.css">
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="signInForm">
         <form action="">
             <h1>Sign In</h1>
             <div class="input-box">
                 <input type="text" placeholder="Username" required>
                 <i class="ti-user"></i>
             </div>
-
+            
             <div class="input-box">
                 <input type="password" placeholder="Password" required>
                 <i class="ti-lock"></i>
@@ -29,12 +29,12 @@
             <button type="submit" class="btn">Login</button>
 
             <div class="SignUp-link">
-                <p>Don't have an account?<a class="SignUpBtn-link" href="">Sign up</a></p>
+                <p>Don't have an account?<a class="SignUpBtn-link" href="javascript:void(0)">Sign up</a></p>
             </div>
         </form>
     </div>
 
-    <div class="wrapper">
+    <div class="wrapper" id="signUpForm">
         <form action="">
             <h1>Sign Up</h1>
             <div class="input-box">
@@ -60,10 +60,68 @@
             <button type="submit" class="btn">Sign Up</button>
 
             <div class="SignUp-link">
-                <p>Already have an account?<a class="SignInBtn-link" href="">Sign In</a></p>
+                <p>Already have an account?<a class="SignInBtn-link" href="javascript:void(0)">Sign In</a></p>
             </div>
         </form>
     </div>
+
+    <div class="wrapper" id="forgotPasswordForm">
+        <form action="">
+            <h1>Forgot Password</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Email or Username" required>
+                <i class="ti-email"></i>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+
+            <div class="SignUp-link">
+                <p>Remember your account?<a class="backToSignInBtn-link" href="javascript:void(0)">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const signUpBtn = document.querySelector('.SignUpBtn-link');
+            const signInBtn = document.querySelector('.SignInBtn-link');
+            const signInForm = document.getElementById('signInForm');
+            const signUpForm = document.getElementById('signUpForm');
+            const forgotPassBtn = document.querySelector('.backToSignInBtn-link');
+            const forgotPassForm = document.getElementById('forgotPasswordForm');
+            const forgotPasswordLinks = document.querySelectorAll('.remember-forgot a');
+    
+            signUpBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Ngăn chặn trang tải lại
+                signInForm.style.display = 'none';
+                signUpForm.style.display = 'block';
+                forgotPassForm.style.display = 'none';
+            });
+    
+            signInBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Ngăn chặn trang tải lại
+                signUpForm.style.display = 'none';
+                signInForm.style.display = 'block';
+                forgotPassForm.style.display = 'none';
+            });
+    
+            forgotPassBtn.addEventListener('click', (e) => {
+                e.preventDefault(); // Ngăn chặn trang tải lại
+                signUpForm.style.display = 'none';
+                signInForm.style.display = 'block';
+                forgotPassForm.style.display = 'none';
+            });
+    
+            forgotPasswordLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Ngăn chặn trang tải lại
+                    signUpForm.style.display = 'none';
+                    signInForm.style.display = 'none';
+                    forgotPassForm.style.display = 'block';
+                });
+            });
+        });
+    </script>
+    
     
 </body>
 </html>
