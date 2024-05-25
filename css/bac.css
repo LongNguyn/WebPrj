@@ -1,17 +1,22 @@
-h3{
+.pr_name{
     font-size: 13px;
 }
-.container {
-    width: 808px;
-    height: 800px;
-  }
-  .product{
-    width: 808px;
-    height: 800px;
-  }
-  .khung2{
+.product{
+    margin-top: 90px;
+    height: auto;
+}
+.khung2{
     display: flex;
-  }
+}
+.pr_label{
+    width: 0;
+    height: 0;
+}
+.pr_content{
+    box-sizing: border-box;
+    height: 408px;
+    display: flex;
+}
 .pr_rate .rate_number{
     display: inline-flex;
     color: rgb(239, 102, 33);
@@ -39,6 +44,13 @@ h3{
     border-radius: 2px;
     color: #E30019;
     border: 1px solid #E30019;
+}
+.chip .chipcon{
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 2px;
+    margin-right: 10px
 }
 .data{
     font-size: 9px;
