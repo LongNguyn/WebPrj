@@ -12,14 +12,19 @@ body{
     background: rgba(249, 8, 8, 0.555);
     background-size: cover;
     background-position: center;
+    background: url('/WebPrj/img/anh_nen_login.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .wrapper{
     width: 420px;
-    background: purple;
+    background: transparent;
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
+    backdrop-filter: blur(10px);
 }
 
 .wrapper h1{
@@ -107,3 +112,4 @@ body{
 #forgotPasswordForm{
     display: none;
 }
+
