@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/case.css" />
+    <link
+      rel="stylesheet"
+      href="font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href="./index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="giohang">
+        <a class="hover" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <script>
+      let press = 0;
+      function showmenu(n) {
+        let menu = document.getElementsByClassName("menu_list");
+        press = press + n;
+        if (press > 1) {
+          press = 0;
+        }
+        if (press % 2 != 0) {
+          menu[0].style.display = "block";
+        } else {
+          menu[0].style.display = "none";
+        }
+      }
+    </script>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="">Chuột</a></li>
+          <li><a href="">Case máy tính</a></li>
+          <li><a href="">Màn hình</a></li>
+          <li><a href="">Bàn phím</a></li>
+          <li><a href="">Tai nghe</a></li>
+          <li><a href="">Pad chuột</a></li>
+          <li><a href="">Điện thoại</a></li>
+        </ul>
+      </div>
+      <div class="pr_container">
+        <div class="product">
+          <div class="pr_heading">
+            <div class="head_boxleft">
+              <h2>Chuột</h2>
+            </div>
+          </div>
+          <!-- p1 -->
+          <div class="pr_content">
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/case-jetek-z7-black_10_de333207e64d4e02866717afba1de552_1024x1024.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">Vỏ máy tính Jetek CSGO2 Z7 Black</a>
+                  </h3>
+                  <!-- <div class="pr_compare_price"><del>699.000₫</del></div> -->
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">790.000₫</span>
+                    <!-- <span class="sale">-34%</span> -->
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.2 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/mx600rgb-03_138a1d824aa3401d9c562e285ce56045_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Cougar MX600 RGB BLACK</a>
+                    </h3>
+
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">2.890.000₫</span>
+
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 1.3 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/image_4e422666f7c748878d5fedd3b0734362_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính ASUS TUF Gaming GT302 ARGB White</a>
+                    </h3>
+
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">3.490.000₫</span>
+
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 1.4 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/ca-1y4-00sewn-00_01_ad89f10acee64887afdd5d4994ef24ab_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Thermaltake Tower 300 Matcha Green - Micro Tower</a>
+                    </h3>
+                    
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">3.350.000₫</span>
+                     
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- p2 -->
+          <div class="pr_content">
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/6500x_white_hero_01_aa_576ecffc07e341d7963354c273ec64e1_1024x1024.webp "
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 6500X TG Mid-Tower White (CC-9011258-WW)</a>
+                    </h3>
+               
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">4.490.000₫</span>
+                    
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 2.2 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/6500x_black_hero_01_aa_54670b887a8f4d8cbee42624885eb027_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 6500X TG Mid-Tower Black (CC-9011257-WW)</a>
+                    </h3>
+                
+               
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">4.490.000₫</span>
+                  
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 2.3 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/6500d_airflow_white_hero_01_aa_e273b71954d64f4282aa89bdfe49c45f_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 6500D Airflow TG Mid-Tower White (CC-9011260-WW)</a>
+                    </h3>
+                    
+                 
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">4.490.000₫</span>
+                    
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 2.4 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/2500x_white_hero_01_aa_b00230fc67494a5296471a1a234ac3f1_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 2500X TG Mid-Tower White (CC-9011266-WW)</a>
+                    </h3>
+                    
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">3.650.000₫</span>
+                   
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <!-- 3 -->
+          <div class="pr_content">
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/6500d_airflow_black_hero_01_aa_b847959acb70443c96ad0d1289cb10af_1024x1024.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 6500D Airflow TG Mid-Tower Black (CC-9011259-WW)</a>
+                    </h3>
+                
+               
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">4.490.000₫</span>
+                 
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 3.2 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/2500d_airflow_white_hero_01_aa_5724b224eb6d4bcfa5f24f88b30d8831_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Corsair 2500D Airflow TG Mid-Tower White (CC-9011264-WW)</a>
+                    </h3>
+                    
+                  
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">2.790.000₫</span>
+                     
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 3.3 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/2500d_airflow_black_hero_01_6f2b4b420afe4551ac82d4279a1c7ca4_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">Vỏ máy tính Corsair 2500D Airflow TG Mid-Tower Black (CC-9011263-WW)</a>
+                  </h3>
+                  
+       
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">3.650.000₫</span>
+             
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3.4 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/quantum_arctic_3f_1_7f59b3180767454a870575edab124b99_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Vỏ máy tính Xigmatek QUANTUM ARCTIC 3F</a>
+                    </h3>
+                    
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">890.000₫</span>
+                    
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p class="address">Address: Liên Hà, Đan Phượng, Hà Nội</p>
+      <p>Contact us: 0357262281</p>
+    </div>
+  </body>
+</html>
