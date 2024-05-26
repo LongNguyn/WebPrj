@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <section>
     <div class="wrapper" id="signInForm">
       <form action="">
         <h1>Sign In</h1>
@@ -29,7 +30,7 @@
           <a href="">Forgot password?</a>
         </div>
 
-        <button type="submit" class="btn">Login</button>
+        <button type="button" class="btn" id="LoginBtn">Login</button>
 
         <div class="SignUp-link">
           <p>
@@ -42,8 +43,10 @@
         </div>
       </form>
     </div>
+    </section>
 
-    <div class="wrapper" id="signUpForm">
+    <section>
+    <div class="wrapper login-box" id="signUpForm">
       <form action="">
         <h1>Sign Up</h1>
         <div class="input-box">
@@ -81,7 +84,9 @@
         </div>
       </form>
     </div>
+    </section>
 
+    <section>
     <div class="wrapper" id="forgotPasswordForm">
       <form action="">
         <h1>Forgot Password</h1>
@@ -90,7 +95,7 @@
           <i class="ti-email"></i>
         </div>
 
-        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn" id="forgotPasswordBtn">Submit</button>
 
         <div class="SignUp-link">
           <p>
@@ -103,6 +108,8 @@
         </div>
       </form>
     </div>
+  </section>
+
     <script>
       document.addEventListener("DOMContentLoaded", (event) => {
         const signUpBtn = document.querySelector(".SignUpBtn-link");
@@ -143,7 +150,16 @@
             forgotPassForm.style.display = "block";
           });
         });
+
+        document.getElementById('LoginBtn').addEventListener('click', function(){
+        window.location.href = '/WebPrj/index.html';
+        });
+
+        document.getElementById('forgotPasswordBtn').addEventListener('click', function() {
+                alert('Pass mới là 12'); // Hiển thị thông báo mật khẩu mới
+            });
       });
+
     </script>
   </body>
 </html>
