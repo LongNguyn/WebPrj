@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/case.css" />
+    <link
+      rel="stylesheet"
+      href="font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href="./index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="giohang">
+        <a class="hover" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <script>
+      let press = 0;
+      function showmenu(n) {
+        let menu = document.getElementsByClassName("menu_list");
+        press = press + n;
+        if (press > 1) {
+          press = 0;
+        }
+        if (press % 2 != 0) {
+          menu[0].style.display = "block";
+        } else {
+          menu[0].style.display = "none";
+        }
+      }
+    </script>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="./chuot.html">Chuột</a></li>
+          <li><a href="./case.html">Case máy tính</a></li>
+          <li><a href="./manhinh.html">Màn hình</a></li>
+          <li><a href="./banphim.html">Bàn phím</a></li>
+          <li><a href="./tainghe.html">Tai nghe</a></li>
+          <li><a href="./padchuot.html">Pad chuột</a></li>
+          <li><a href="./ram.html">Ram/SSD</a></li>
+        </ul>
+      </div>
+      <div class="pr_container">
+        <div class="product">
+          <div class="pr_heading">
+            <div class="head_boxleft">
+              <h2>Dung lượng Ram</h2>
+            </div>
+          </div>
+          <!-- p1 -->
+          <div class="pr_content">
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/32864_xlr8_ddr4_8gb_3200_pk_bafe_291c2d1952ff446d9285ada0e525d44a_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">RAM PNY XLR8 1x8GB 3200MHz DDR4 LONGDIMM (MD8GD4320016XR)</a>
+                  </h3>
+                  <div class="pr_compare_price"><del>790.000₫</del></div>
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">650.000₫</span>
+                    <span class="sale">-18%</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.2 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/gearvn-ram-t-group-t-force-delta-1x16gb-3600-rgb-white-4_3c93ce9bc46c4a29abfbac15c7ff6957_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Ram T-Group T-Force Delta 1x16GB 3600 RGB White</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>1.690.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">1.390.000₫</span>
+                      <span class="sale">-18%</span>
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 1.3 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/__1__cd8ec5fdeb914349bab1596fda95cef3_85e4701c6bdf45f79b1bcc21ebeb49a3_4e170dd3db4d4be1a2a8258085bd5458_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Ram Corsair Dominator 32GB (2x16GB) RGB 3200 (CMT32GX4M2E3200C16)</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>4.990.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">3.390.000₫</span>
+                      <span class="sale">-32%</span>
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 1.4 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/-dominator-rgb-platinum-black-ddr5-13_433d4f540a0148c69d84652e4a4e2489_c53b62c91f474a52aa1c84c64118193b_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">RAM Corsair Dominator Platinum 64GB (2x32GB) RGB 5200 DDR5 (CMT64GX5M2B5200C40)</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>10.990.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">6.990.000₫</span>
+                      <span class="sale">-36%</span>
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+         <!-- p222222222222222222222222222222222222222222222222222222222222222222222222 -->
+        <div class="product">
+            <div class="pr_heading">
+              <div class="head_boxleft">
+                <h2>Dung lượng SSD</h2>
+              </div>
+            </div>
+            <div class="pr_content">
+                <div class="pr_case">
+                  <div class="pr_info">
+                    <div class="pr_preview">
+                      <img
+                        src="./img/gvn_addlink_s68_1_54089af0c6d845c9a6cde56b573eb06b_grande.webp"
+                        alt=""
+                      />
+                    </div>
+                    <div class="pr_detail">
+                      <h3 class="pr_name">
+                        <a href="">Ổ cứng Addlink S68 M.2 2280 NVMe Gen 3 256GB</a>
+                      </h3>
+                      <div class="pr_compare_price"><del>890.000₫</del></div>
+                      <div class="pr_price">
+                        <span class="pr_price_highlight">690.000₫</span>
+                        <span class="sale">-22%</span>
+                      </div>
+                      <div class="pr_rate">
+                        <span class="rate_number">0.0<i class="ti-star"></i></span>
+                        <span>(0 đánh giá)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 2.2 -->
+                <div class="pr_case">
+                    <div class="pr_info">
+                      <div class="pr_preview">
+                        <img
+                          src="./img/ssd_31e6610041e74ca8bc06d3bc58040f89_db09b05997764275b35cec4ffc68b3d4_grande.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="pr_detail">
+                        <h3 class="pr_name">
+                          <a href="">Ổ cứng PNY SSD CS1031 M.2 2280 NVMe 256GB</a>
+                        </h3>
+                        <div class="pr_compare_price"><del>1.090.000₫</del></div>
+                        <div class="pr_price">
+                          <span class="pr_price_highlight">690.000₫</span>
+                          <span class="sale">-37%</span>
+                        </div>
+                        <div class="pr_rate">
+                          <span class="rate_number">0.0<i class="ti-star"></i></span>
+                          <span>(0 đánh giá)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 2.3 -->
+                <div class="pr_case">
+                    <div class="pr_info">
+                      <div class="pr_preview">
+                        <img
+                          src="./img/500_2c3dab1f31804c5d865af3a26cebda03_cd349308894542fe97b02876d80270f1_grande.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="pr_detail">
+                        <h3 class="pr_name">
+                          <a href="">Ổ cứng SSD Kingston NV2 500GB M.2 PCIe NVMe Gen4</a>
+                        </h3>
+                        <div class="pr_compare_price"><del>1.590.000₫</del></div>
+                        <div class="pr_price">
+                          <span class="pr_price_highlight">1.390.000₫</span>
+                          <span class="sale">-13%</span>
+                        </div>
+                        <div class="pr_rate">
+                          <span class="rate_number">0.0<i class="ti-star"></i></span>
+                          <span>(0 đánh giá)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- 2.4 -->
+                <div class="pr_case">
+                    <div class="pr_info">
+                      <div class="pr_preview">
+                        <img
+                          src="./img/wd_blue_sn570_1tb_ww_front_hr__1__9d53d75557054e80b706ad367d557946_05bf857e910947fe8afb87ed1d214a9a_grande.webp"
+                          alt=""
+                        />
+                      </div>
+                      <div class="pr_detail">
+                        <h3 class="pr_name">
+                          <a href="">Ổ Cứng SSD WD Blue SN570 1TB M.2 NVMe PCIe Gen3 (WDS100T3B0C)</a>
+                        </h3>
+                        <div class="pr_compare_price"><del>2.690.000₫</del></div>
+                        <div class="pr_price">
+                          <span class="pr_price_highlight">1.990.000₫</span>
+                          <span class="sale">-26%</span>
+                        </div>
+                        <div class="pr_rate">
+                          <span class="rate_number">0.0<i class="ti-star"></i></span>
+                          <span>(0 đánh giá)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+
+    <div class="footer">
+      <p class="address">Address: Liên Hà, Đan Phượng, Hà Nội</p>
+      <p>Contact us: 0357262281</p>
+    </div>
+  </body>
+</html>
