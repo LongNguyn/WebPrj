@@ -1,115 +1,111 @@
 * {
-    margin: 0;
-    padding : 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: rgba(249, 8, 8, 0.555);
-    background-size: cover;
-    background-position: center;
-    background: url('/WebPrj/img/anh_nen_login.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.wrapper{
-    width: 420px;
-    background: transparent;
-    color: #fff;
-    border-radius: 10px;
-    padding: 30px 40px;
-    backdrop-filter: blur(10px);
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(249, 8, 8, 0.555);
+  background-size: cover;
+  background-position: center;
+  background: url("../img/anh_nen_login.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
+.wrapper {
+  width: 420px;
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  backdrop-filter: blur(10px);
 }
 
-.wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
 }
 
-.input-box input{
-    
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255,255 ,255, 0.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-.input-box input::placeholder{
-    color: #fff;
-}
-.input-box i{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
 }
 
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
 }
-.remember-forgot label input{
-    accent-color: #fff;
-    margin-right: 3px;
+.input-box input::placeholder {
+  color: #fff;
 }
-.remember-forgot a{
-    color: #fff;
-    text-decoration: none;
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
-.remember-forgot a:hover{
-    
-    text-decoration: underline;
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
 }
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
 }
-.wrapper .SignUp-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
 }
-.SignUp-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+.remember-forgot a:hover {
+  text-decoration: underline;
 }
-.SignUp-link p a:hover{
-    text-decoration: underline;
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.wrapper .SignUp-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.SignUp-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.SignUp-link p a:hover {
+  text-decoration: underline;
 }
 
 #signUpForm,
-#forgotPasswordForm{
-    display: none;
+#forgotPasswordForm {
+  display: none;
 }
-

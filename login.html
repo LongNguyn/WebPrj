@@ -12,103 +12,106 @@
   </head>
   <body>
     <section>
-    <div class="wrapper" id="signInForm">
-      <form action="">
-        <h1>Sign In</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" required />
-          <i class="ti-user"></i>
-        </div>
+      <div class="wrapper" id="signInForm">
+        <form action="">
+          <h1>Sign In</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="ti-user"></i>
+          </div>
 
-        <div class="input-box">
-          <input type="password" placeholder="Password" required />
-          <i class="ti-lock"></i>
-        </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="ti-lock"></i>
+          </div>
 
-        <div class="remember-forgot">
-          <label><input type="checkbox" />Remember me</label>
-          <a href="">Forgot password?</a>
-        </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox" />Remember me</label>
+            <a href="">Forgot password?</a>
+          </div>
 
-        <button type="button" class="btn" id="LoginBtn">Login</button>
+          <button type="button" class="btn" id="LoginBtn">Login</button>
 
-        <div class="SignUp-link">
-          <p>
-            Don't have an account?<a
-              class="SignUpBtn-link"
-              href="javascript:void(0)"
-              >Sign up</a
-            >
-          </p>
-        </div>
-      </form>
-    </div>
+          <div class="SignUp-link">
+            <p>
+              Don't have an account?<a
+                class="SignUpBtn-link"
+                href="javascript:void(0)"
+                >Sign up</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section>
-    <div class="wrapper login-box" id="signUpForm">
-      <form action="">
-        <h1>Sign Up</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Username" required />
-          <i class="ti-user"></i>
-        </div>
+      <div class="wrapper login-box" id="signUpForm">
+        <form action="">
+          <h1>Sign Up</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="ti-user"></i>
+          </div>
 
-        <div class="input-box">
-          <input type="email" placeholder="Email" required />
-          <i class="ti-email"></i>
-        </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <i class="ti-email"></i>
+          </div>
 
-        <div class="input-box">
-          <input type="password" placeholder="Password" required />
-          <i class="ti-lock"></i>
-        </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="ti-lock"></i>
+          </div>
 
-        <div class="remember-forgot">
-          <label
-            ><input type="checkbox" />I agree to the terms and conditions</label
-          >
-          <a href="">Forgot password?</a>
-        </div>
-
-        <button type="submit" class="btn">Sign Up</button>
-
-        <div class="SignUp-link">
-          <p>
-            Already have an account?<a
-              class="SignInBtn-link"
-              href="javascript:void(0)"
-              >Sign In</a
+          <div class="remember-forgot">
+            <label
+              ><input type="checkbox" />I agree to the terms and
+              conditions</label
             >
-          </p>
-        </div>
-      </form>
-    </div>
+            <!-- <a href="">Forgot password?</a> -->
+          </div>
+
+          <button type="submit" class="btn">Sign Up</button>
+
+          <div class="SignUp-link">
+            <p>
+              Already have an account?<a
+                class="SignInBtn-link"
+                href="javascript:void(0)"
+                >Sign In</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section>
-    <div class="wrapper" id="forgotPasswordForm">
-      <form action="">
-        <h1>Forgot Password</h1>
-        <div class="input-box">
-          <input type="text" placeholder="Email or Username" required />
-          <i class="ti-email"></i>
-        </div>
+      <div class="wrapper" id="forgotPasswordForm">
+        <form action="">
+          <h1>Forgot Password</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Email or Username" required />
+            <i class="ti-email"></i>
+          </div>
 
-        <button type="button" class="btn" id="forgotPasswordBtn">Submit</button>
+          <button type="button" class="btn" id="forgotPasswordBtn">
+            Submit
+          </button>
 
-        <div class="SignUp-link">
-          <p>
-            Remember your account?<a
-              class="backToSignInBtn-link"
-              href="javascript:void(0)"
-              >Sign In</a
-            >
-          </p>
-        </div>
-      </form>
-    </div>
-  </section>
+          <div class="SignUp-link">
+            <p>
+              Remember your account?<a
+                class="backToSignInBtn-link"
+                href="javascript:void(0)"
+                >Sign In</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
 
     <script>
       document.addEventListener("DOMContentLoaded", (event) => {
@@ -151,15 +154,18 @@
           });
         });
 
-        document.getElementById('LoginBtn').addEventListener('click', function(){
-        window.location.href = '/WebPrj/index.html';
-        });
+        document
+          .getElementById("LoginBtn")
+          .addEventListener("click", function () {
+            window.location.href = "/WebPrj/index.html";
+          });
 
-        document.getElementById('forgotPasswordBtn').addEventListener('click', function() {
-                alert('Pass mới là 12'); // Hiển thị thông báo mật khẩu mới
-            });
+        document
+          .getElementById("forgotPasswordBtn")
+          .addEventListener("click", function () {
+            alert("Pass mới là 12"); // Hiển thị thông báo mật khẩu mới
+          });
       });
-
     </script>
   </body>
 </html>
