@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/case.css" />
+    <link
+      rel="stylesheet"
+      href="font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href="./index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="giohang">
+        <a class="hover" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <script>
+      let press = 0;
+      function showmenu(n) {
+        let menu = document.getElementsByClassName("menu_list");
+        press = press + n;
+        if (press > 1) {
+          press = 0;
+        }
+        if (press % 2 != 0) {
+          menu[0].style.display = "block";
+        } else {
+          menu[0].style.display = "none";
+        }
+      }
+    </script>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="./chuot.html">Chuột</a></li>
+          <li><a href="./case.html">Case máy tính</a></li>
+          <li><a href="./manhinh.html">Màn hình</a></li>
+          <li><a href="">Bàn phím</a></li>
+          <li><a href="">Tai nghe</a></li>
+          <li><a href="">Pad chuột</a></li>
+          <li><a href="">Điện thoại</a></li>
+        </ul>
+      </div>
+      <div class="pr_container">
+        <div class="product">
+          <div class="pr_heading">
+            <div class="head_boxleft">
+              <h2>Lót Chuột</h2>
+            </div>
+          </div>
+          <!-- p1 -->
+          <div class="pr_content">
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/fireflyv2pro_500x500-black_86320596fc22408080936fa1f4df3358_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">Tấm lót chuột Razer Firefly V2 Pro</a>
+                  </h3>
+                  <div class="pr_compare_price"><del>3.490.000₫</del></div>
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">2.990.000₫</span>
+                    <span class="sale">-14%</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.2 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/gvn09174_0e775f9e04a44faabfb2e8b105dedc59_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">Lót chuột GEARVN Da Pu Đen (450x400x2)</a>
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">190.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.3 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/gvn09203_0678603169b643fb90c3cd7b94bfbbf6_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href="">Lót chuột GEARVN Da Pu Xanh (450x400x2)</a>
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">190.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.4 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/gvn09185_49639751acd349859e1d3b55a42ee4f7_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href=""
+                      >Lót chuột GEARVN Da Pu Hồng (450x400x2)</a>
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">190.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- p2 -->
+          <div class="pr_content">
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/gvn09217_6b034afe03494638bd762a4959bb4203_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href=""
+                      >Lót chuột GEARVN Nỉ (900x400x3)</a>
+                    
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">300.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2.2 -->
+            <div class="pr_case">
+                <div class="pr_info">
+                  <div class="pr_preview">
+                    <img
+                      src="./img/gearvn_cougargamingarena_black_1_56df2bc4132c4b768e216b8ac9326e57_08f685586e5547d3a67a5bf33eeb3776_grande.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="pr_detail">
+                    <h3 class="pr_name">
+                      <a href="">Lót chuột COUGAR ARENA BLACK XL - GAMING MOUSE PAD</a>
+                    </h3>
+                    <div class="pr_compare_price"><del>430.000₫</del></div>
+                    <div class="pr_price">
+                      <span class="pr_price_highlight">350.000₫</span>
+                      <span class="sale">-19%</span>
+                    </div>
+                    <div class="pr_rate">
+                      <span class="rate_number">0.0<i class="ti-star"></i></span>
+                      <span>(0 đánh giá)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- 2.3 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/thumbchuot_8cc699ea4c194068bb16e45f27d46e60_3ce455b4d5ff4404ad626a0a946c3cb9_grande.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href=""
+                      >Lót chuột ROG Hone Ace Aim Lab Edition</a
+                    >
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">890.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2.4 -->
+            <div class="pr_case">
+              <div class="pr_info">
+                <div class="pr_preview">
+                  <img
+                    src="./img/d_asus_tuf_gaming_p1_5_songphuong.vn__aca80cb053a14e43bca1ef7d526b47c0_0c78606088ba455a9e935524913c7ca7_grande.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="pr_detail">
+                  <h3 class="pr_name">
+                    <a href=""
+                      >Tấm lót chuột Asus TUF Gaming P1</a
+                    >
+                  </h3>
+
+                  <div class="pr_price">
+                    <span class="pr_price_highlight">350.000₫</span>
+                  </div>
+                  <div class="pr_rate">
+                    <span class="rate_number">0.0<i class="ti-star"></i></span>
+                    <span>(0 đánh giá)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="address">Address: Liên Hà, Đan Phượng, Hà Nội</p>
+      <p>Contact us: 0357262281</p>
+    </div>
+  </body>
+</html>
