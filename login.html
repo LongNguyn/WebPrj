@@ -16,12 +16,12 @@
         <form action="">
           <h1>Sign In</h1>
           <div class="input-box">
-            <input type="text" placeholder="Username" required />
+            <input type="text" id="username" placeholder="Username" required />
             <i class="ti-user"></i>
           </div>
 
           <div class="input-box">
-            <input type="password" placeholder="Password" required />
+            <input type="password" id="password" placeholder="Password" required />
             <i class="ti-lock"></i>
           </div>
 
@@ -154,11 +154,17 @@
           });
         });
 
-        document
-          .getElementById("LoginBtn")
-          .addEventListener("click", function () {
-            window.location.href = "/WebPrj/index.html";
-          });
+        document.getElementById("LoginBtn").addEventListener("click", function () {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+                // Kiểm tra cả username và password đã được điền
+                window.location.href = "index.html";
+            } else {
+                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+            }
+        });
 
         document
           .getElementById("forgotPasswordBtn")
