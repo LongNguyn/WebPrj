@@ -170,6 +170,7 @@ body {
 }
 
 .variant-options button {
+  text-decoration: none;
   padding: 10px 15px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -177,6 +178,9 @@ body {
   background-color: #fff;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+.options {
+  font-size: 12px;
 }
 
 .variant-options button:hover {
