@@ -191,13 +191,13 @@
           const hasNumbers = /[0-9]/.test(value);
 
           if (value && hasLetters && hasNumbers) { //nếu chứa cả chữ và số và 0 rỗng
-            input.style.border = "1px solid greenyellow";
+            input.style.border = "2px solid greenyellow";
             return true;
           } else if (value === "") {
             input.style.border = "";
             return false;
           } else {
-            input.style.border = "1px solid red";
+            input.style.border = "2px solid black";
             return false;
           }
         }
@@ -206,13 +206,13 @@
           const value = input.value;
 
           if (value && value.length > 7) {
-            input.style.border = "1px solid greenyellow";
+            input.style.border = "2px solid greenyellow";
             return true;
           } else if (value === "") {
             input.style.border = "";
             return false;
           } else {
-            input.style.border = "1px solid red";
+            input.style.border = "2px solid black";
             return false;
           }
         }
@@ -222,13 +222,13 @@
             const checkMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
 
             if (value && checkMail.test(value)) {
-              input.style.border = "1px solid greenyellow";
+              input.style.border = "2px solid greenyellow";
               return true;
             } else if (value === "") {
               input.style.border = "";
               return false;
             } else {
-              input.style.border = "1px solid red";
+              input.style.border = "2px solid black";
               return false;
             }
           }
