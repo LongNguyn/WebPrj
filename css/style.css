@@ -69,6 +69,9 @@ body {
   background-color: aliceblue;
   cursor: pointer;
 }
+.fa-cart-shopping {
+  margin-right: 10px;
+}
 .ti-user {
   margin-right: 10px;
 }
