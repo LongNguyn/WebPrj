@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylepayments.css">
     <link rel="stylesheet" href="./font/themify-icons-font/themify-icons/themify-icons.css">
-    <title>Document</title>
+    <title>Thanh Toán</title>
 </head>
 <body>
     <div class="container">
@@ -167,6 +167,33 @@
                 cvvBox.style.border="1px solid greenyellow";
             }
         });
+
+                // Lấy tham chiếu đến nút thanh toán
+        const paymentButton = document.querySelector('button');
+
+        // Thêm sự kiện click cho nút thanh toán
+        paymentButton.addEventListener('click', function(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của nút submit
+
+            // Kiểm tra xem tất cả các trường thông tin đã được điền đúng chưa
+            const cardNumber = document.getElementById('number').value.replace(/\s/g, '');
+            const expiryDate = document.getElementById('e-date').value;
+            const cvv = document.getElementById('cvv').value;
+
+            // Kiểm tra mỗi trường thông tin
+            if (cardNumber.length !== 16) {
+                alert('Vui lòng nhập đúng số thẻ.');
+            } else if (expiryDate.length !== 5 || !/^\d{2}\/\d{2}$/.test(expiryDate)) {
+                alert('Vui lòng nhập đúng ngày hết hạn (MM/YY).');
+            } else if (cvv.length !== 3) {
+                alert('Vui lòng nhập đúng mã bảo mật (CVV).');
+            } else {
+                // Nếu tất cả thông tin đều hợp lệ, hiển thị thông báo thanh toán thành công
+                alert('Thanh toán thành công!');
+                window.location.href = "index.html";
+            }
+        });
+
     </script>
 </body>
 </html>
