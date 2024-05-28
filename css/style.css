@@ -98,6 +98,11 @@ body {
   width: 250px;
   background-color: white;
   display: none;
+  overflow: auto;
+  overscroll-behavior: none;
+}
+.menu_list::-webkit-scrollbar {
+  width: 5px;
 }
 .menu_list ul {
   padding: 0;
