@@ -10,16 +10,16 @@
 <body>
     <div class="container">
         <div class="left">
-            <p>Payment methods</p>
+            <p>Phương thức thanh toán</p>
             <hr style="border:1px solid #ccc; margin: 0 15px;">
             <div class="methods">
                 <div onclick="doFun()" id="tColorA" style="color:greenyellow;">
                     <i class="fa-solid fa-credit-card" style="color:greenyellow"></i>
-                    Payment by card
+                    Thanh toán bằng thẻ
                 </div>
                 <div onclick="doFunA()" id="tColorB">
                     <i class="fa-solid fa-building-columns"></i>
-                    Internet banks
+                    Chuyển khoản ngân hàng
                 </div>
                 <div onclick="doFunB()" id="tColorC">
                     <i class="fa-solid fa-wallet"></i>
@@ -35,18 +35,18 @@
                 <hr style="border: 1px solid #ccc; margin: 0 15px;">
                 <div class="card-details">
                     <form>
-                        <p>Card Number</p>
+                        <p>Mã số thẻ</p>
                         <div class="c-number" id="c-number">
                             <input id="number" class="cc-number" placeholder="Card number" maxlength="19" required>
                             <i class="fa-solid fa-credit-card" style="margin: 0;"></i>
                         </div>
                         <div class="c-details">
                             <div>
-                                <p>Expiry date</p>
+                                <p>Ngày hết hạn</p>
                                 <input id="e-date" class="cc-exp" placeholder="MM/YY" required maxlength="5" required>
                             </div>
                             <div>
-                                <p>CVV</p>
+                                <p>Mã bảo mật</p>
                                 <div class="cvv-box" id="cvv-box">
                                     <input id="cvv" class="cc-cvv" placeholder="CVV" required maxlength="3" required>
                                     <i class="fa-solid fa-circle-question" title="3 digits on the back of the card" style="cursor: pointer;"></i>
@@ -57,17 +57,17 @@
                             <p>Email</p>
                             <input type="email" placeholder="example@email.com" id="email" required>
                         </div>
-                        <button>PAY NOW</button>
+                        <button>Thanh Toán</button>
                     </form>
                 </div>
         </div>
 
         <div class="right">
-            <p>Order information</p>
+            <p>Thông tin đặt hàng</p>
             <hr style="border: 1px solid #ccc; margin: 0 15px;">
             <div class="details">
-                <div style="font-weight: bold; padding: 3px 0;">Order discription</div>
-                <div style="padding: 3px 0;">Test payment</div>
+                <div style="font-weight: bold; padding: 3px 0;">Mô tả đơn hàng</div>
+                <div style="padding: 3px 0;">Kiểm thử thanh toán</div>
             </div>
             <hr style="border: 1px solid #ccc; margin: 0 15px;">
             <a href="https://www.shift4shop.com/credit-card-logos.html">
@@ -160,7 +160,7 @@
         cvv.addEventListener('keyup', function(e){
 
             let elen = cvv.value;
-            let cvvBox = document.getElementById('cvv-bõx');
+            let cvvBox = document.getElementById('cvv-box');
             if(elen.length<3){
                 cvvBox.style.border="1px solid red";
             }else{
