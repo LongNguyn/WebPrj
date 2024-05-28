@@ -6,7 +6,7 @@
 }
 .bought_list {
   width: 65%;
-  height: 1000px;
+  height: fit-content;
   margin: 76px auto 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
@@ -46,6 +46,7 @@
   font-weight: bold;
 }
 .thanhtien {
+  border-top: 1px solid gray;
   width: 680px;
   margin: 0 auto;
 }
@@ -79,4 +80,7 @@
 }
 .confirm:hover {
   cursor: pointer;
+}
+.bought_item {
+  display: none;
 }
