@@ -109,9 +109,9 @@
               <span class="flash-sale-label">FLASH SALE</span>
             </div>
             <div class="price">
-              <span class="original-price">1.990.000₫</span>
-              <span class="discounted-price">9.890.000₫</span>
-              <span class="discount">11% GIẢM</span>
+              <span class="original-price">990.000₫</span>
+              <span class="discounted-price">490.000₫</span>
+              <span class="discount">30% GIẢM</span>
             </div>
             <div class="shipping">
               <span>Vận Chuyển</span>
@@ -124,10 +124,60 @@
             <div class="variants">
               <span>Phân Loại</span>
               <div class="variant-options">
-                <button>Titan - Tự Nhiên</button>
-                <button>Titan - Xanh</button>
-                <button>Titan - Trắng</button>
-                <button>Titan - Đen</button>
+                <button>
+                  <a class="options" onclick="higlight(0)">Trắng </a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(1)">Đen </a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(2)">Trắng - Có Led</a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(3)">Đen - Có Led</a>
+                </button>
+                <script>
+                  let choose = 0;
+                  function higlight(n) {
+                    let option = document.getElementsByClassName("options");
+                    choose = choose + 1;
+                    if (choose > 1) {
+                      choose = 0;
+                    }
+                    if (choose % 2 != 0 && n == 0) {
+                      option[n].style.color = "red";
+                      option[1].style.color = "black";
+                      option[2].style.color = "black";
+                      option[3].style.color = "black";
+                    } else {
+                      option[0].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 1) {
+                      option[0].style.color = "black";
+                      option[n].style.color = "red";
+                      option[2].style.color = "black";
+                      option[3].style.color = "black";
+                    } else {
+                      option[1].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 2) {
+                      option[0].style.color = "black";
+                      option[1].style.color = "black";
+                      option[2].style.color = "red";
+                      option[3].style.color = "black";
+                    } else {
+                      option[2].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 3) {
+                      option[0].style.color = "black";
+                      option[1].style.color = "black";
+                      option[2].style.color = "black";
+                      option[3].style.color = "red";
+                    } else {
+                      option[3].style.color = "black";
+                    }
+                  }
+                </script>
               </div>
             </div>
             <div class="quantity">
