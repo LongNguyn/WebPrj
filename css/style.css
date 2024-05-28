@@ -86,7 +86,7 @@ body {
 .ti-user {
   margin-right: 10px;
 }
-.ti-location-pin{
+.ti-location-pin {
   margin-right: 10px;
 }
 .header .hover:hover {
@@ -347,6 +347,7 @@ a {
   text-align: center;
   p {
     margin: 0 0 5px;
+    text-align: center;
   }
   .address {
     padding-top: 10px;

@@ -17,7 +17,7 @@ body {
 }
 
 .left {
-  width: 50%;
+  width: 65%;
   padding: 20px;
 }
 
@@ -95,7 +95,7 @@ body {
   right: 10px;
 }
 
-.address p {
+.location p {
   font-size: 25px;
   margin: 10px 0;
   display: flex;
@@ -103,7 +103,12 @@ body {
   align-items: center;
 }
 
-.address img {
+.location img {
   vertical-align: middle;
   margin-right: 10px;
+  max-width: 50px;
+}
+.location {
+  margin-top: 20px;
+  display: flex;
 }
