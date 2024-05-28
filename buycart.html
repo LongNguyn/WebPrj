@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./font/themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Buy-cart</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href="./index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="giohang">
+        <a class="hover" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="./chuot.html">Chuột</a></li>
+          <li><a href="./case.html">Case máy tính</a></li>
+          <li><a href="./manhinh.html">Màn hình</a></li>
+          <li><a href="./banphim.html">Bàn phím</a></li>
+          <li><a href="./tainghe.html">Tai nghe</a></li>
+          <li><a href="./padchuot.html">Pad chuột</a></li>
+          <li><a href="./ram.html">Ram/SSD</a></li>
+        </ul>
+      </div>
+      <script>
+        let press = 0;
+        function showmenu(n) {
+          let menu = document.getElementsByClassName("menu_list");
+          press = press + n;
+          if (press > 1) {
+            press = 0;
+          }
+          if (press % 2 != 0) {
+            menu[0].style.display = "block";
+          } else {
+            menu[0].style.display = "none";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
