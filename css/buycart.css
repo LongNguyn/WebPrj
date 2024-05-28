@@ -1,0 +1,86 @@
+.buy_cast {
+  height: 50px;
+}
+.buy_cast h2 {
+  margin-left: 40px;
+}
+.bought_list {
+  width: 65%;
+  height: fit-content;
+  margin: 76px auto 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+}
+.bought_item {
+  width: 680px;
+  height: 200px;
+  margin: 20px auto 0;
+  display: flex;
+}
+.item_preview {
+  display: block;
+  width: 200px;
+}
+.item_preview img {
+  margin: 20px 25px;
+  max-width: 150px;
+}
+.item_preview a {
+  margin: 0 30px;
+  cursor: pointer;
+}
+.item_preview i {
+  margin-right: 10px;
+}
+.item_name {
+  width: 300px;
+}
+.item_name a {
+  padding: 0px 0 0px 10px;
+  margin-top: 20px;
+}
+.it_price {
+  width: 180px;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.thanhtien {
+  border-top: 1px solid gray;
+  width: 680px;
+  margin: 0 auto;
+}
+.tinhtien {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+}
+.tongtien {
+  margin-right: 50px;
+}
+.confirm {
+  width: 680px;
+  margin: 10px auto;
+  height: 70px;
+  background-color: red;
+  text-align: center;
+  border-radius: 15px;
+}
+.confirm div {
+  padding-top: 20px;
+}
+.confirm a {
+  padding: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.confirm:hover {
+  cursor: pointer;
+}
+.bought_item {
+  display: none;
+}
