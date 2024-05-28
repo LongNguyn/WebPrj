@@ -164,14 +164,21 @@
             forgotPassForm.style.display = "block";
           });
         });
-
+        
         document
           .getElementById("forgotPasswordBtn")
           .addEventListener("click", function () {
-            alert("Pass mới là 12"); // Hiển thị thông báo mật khẩu mới
+            const isUsernameValid1 = validateUsername(forgotPassInput);
+            const isMailValid = validateEmail(forgotPassInput);
+            if(isMailValid || isUsernameValid1){
+              alert("Pass mới là 12");// Hiển thị thông báo mật khẩu mới
+            }
+            else{
+              alert("Vui lòng nhập đúng Email hoặc Username"); 
+            }
           });
 
-              // Kiểm tra và thay đổi màu viền của ô nhập liệu
+        // Kiểm tra và thay đổi màu viền của ô nhập liệu
         const usernameInput = document.querySelector("#signInForm input[placeholder='Username']"); //lấy Username ở sign in
         const passwordInput = document.querySelector("#signInForm input[placeholder='Password']"); //lấy pass ở sign in
         const signUpemail = document.querySelector("#signUpForm input[placeholder='Email']"); //lấy mail ở sigup
