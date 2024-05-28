@@ -16,7 +16,7 @@
         <form action="">
           <h1>Sign In</h1>
           <div class="input-box">
-            <input type="text" id="username" placeholder="Username" required />
+            <input type="text" placeholder="Username" required />
             <i class="ti-user"></i>
           </div>
 
@@ -37,8 +37,19 @@
               Don't have an account?<a
                 class="SignUpBtn-link"
                 href="javascript:void(0)"
-                >Sign up</a
-              >
+                >Sign up</a><br>
+              or <br>
+              <div class="sign-in-with-app">
+                <a class="fb-link" href="https://facebook.com" >
+                  <i class="ti-facebook"></i>
+                </a>
+                <a class="ins-link" href="https://instagram.com">
+                  <i class="ti-instagram"></i>
+                </a>
+                <a href="https://google.com" class="gg-link">
+                  <i class="ti-google"></i>
+                </a>
+              </div>
             </p>
           </div>
         </form>
@@ -50,7 +61,7 @@
         <form action="">
           <h1>Sign Up</h1>
           <div class="input-box">
-            <input type="text" placeholder="Username" required />
+            <input type="text" id="username" placeholder="Username" required />
             <i class="ti-user"></i>
           </div>
 
@@ -172,6 +183,8 @@
             alert("Pass mới là 12"); // Hiển thị thông báo mật khẩu mới
           });
       });
+
+
     </script>
   </body>
 </html>
