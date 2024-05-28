@@ -1,237 +1,234 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
+  height: 650px;
+  width: 60%;
+  margin: 76px auto 0;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .product-page {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .product-images {
-    width: 40%;
-    padding: 20px;
+  width: 40%;
+  padding: 20px;
 }
 
 .main-image {
-    width: 100%;
-    border: 1px solid #ddd;
-    padding: 5px;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 5px;
 }
 
 .thumbnail-images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .thumbnail-images img {
-    width: 18%;
-    border: 1px solid #ddd;
-    padding: 5px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  width: 18%;
+  border: 1px solid #ddd;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .thumbnail-images img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .share-icons {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .share-icons span {
-    margin-right: 10px;
-    font-weight: bold;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .share-icons a img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    cursor: pointer;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .product-details {
-    width: 55%;
-    padding: 20px;
+  width: 55%;
+  padding: 20px;
 }
 
 .product-details h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .reviews {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .reviews .rating {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff9800;
-    margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9800;
+  margin-right: 10px;
 }
 
 .reviews .reviews-count,
 .reviews .sales {
-    font-size: 14px;
-    color: #666;
-    margin-right: 20px;
+  font-size: 14px;
+  color: #666;
+  margin-right: 20px;
 }
 
 .flash-sale {
-    margin-bottom: 20px;
-    
-    
+  margin-bottom: 20px;
 }
 
 .flash-sale .flash-sale-label {
-    background-color: #ff5722;
-    color: #fff;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin-right: 10px;
+  background-color: #ff5722;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .flash-sale .time-left {
-    font-size: 14px;
-    color: #fff;
-    background-color: red;
-    margin-right: 10px;
-    
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  margin-right: 10px;
 }
 
 .price {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .price .original-price {
-    font-size: 18px;
-    color: #999;
-    text-decoration: line-through;
-    margin-right: 10px;
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+  margin-right: 10px;
 }
 
 .price .discounted-price {
-    font-size: 24px;
-    color: #e91e63;
-    font-weight: bold;
-    margin-right: 10px;
+  font-size: 24px;
+  color: #e91e63;
+  font-weight: bold;
+  margin-right: 10px;
 }
 
 .price .discount {
-    font-size: 14px;
-    color: #ff5722;
-    font-weight: bold;
+  font-size: 14px;
+  color: #ff5722;
+  font-weight: bold;
 }
 
 .shipping {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .shipping span {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .shipping .shipping-methods span {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .variants {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .variants span {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .variant-options button {
-    padding: 10px 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .variant-options button:hover {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .quantity {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .quantity span {
-    display: block;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
 }
 
 .quantity input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ddd;
-    margin-right: 10px;
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
 }
 
 .actions {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 .actions button {
-    padding: 15px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-right: 10px;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
 }
 
 .actions .add-to-cart {
-    background-color: white  ;
-    color: red;
-    border: 1px solid red;
+  background-color: white;
+  color: red;
+  border: 1px solid red;
 }
 
 .actions .add-to-cart:hover {
-    background-color: pink ;
+  background-color: pink;
 }
 
 .actions .buy-now {
-    background-color: red ;
-    color: #fff;
+  background-color: red;
+  color: #fff;
 }
 
 .actions .buy-now:hover {
-    background-color: blue;
+  background-color: blue;
 }
