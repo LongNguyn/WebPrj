@@ -12,7 +12,7 @@ body {
   background: rgba(249, 8, 8, 0.555);
   background-size: cover;
   background-position: center;
-  background: url("../img/bg_login1.jpg") no-repeat;
+  background: url("../img/bg_login5.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -22,7 +22,7 @@ body {
   background: transparent;
   color: #fff;
   border-radius: 10px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   padding: 30px 40px;
   backdrop-filter: blur(10px);
 }
