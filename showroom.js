@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        'sr5.jpg', // Replace with your image paths
-        'sr6.jpg', // Replace with your image paths
-        'sr7.jpg'  // Replace with your image paths
+        './img/sr5.jpg', // Replace with your image paths
+        './img/sr6.jpg', // Replace with your image paths
+        './img/sr7.jpg'  // Replace with your image paths
     ];
 
     let currentIndex = 0;
