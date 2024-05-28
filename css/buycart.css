@@ -7,7 +7,7 @@
 .bought_list {
   width: 65%;
   height: fit-content;
-  margin: 76px auto 0;
+  margin: 76px auto 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 15px;
 }
