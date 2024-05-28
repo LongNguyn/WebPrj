@@ -30,7 +30,7 @@
             <a href="">Forgot password?</a>
           </div>
 
-          <button type="button" class="btn" id="LoginBtn">Login</button>
+          <button type="button" class="btn" id="LoginBtn">Sign In</button>
 
           <div class="SignUp-link">
             <p>
@@ -83,7 +83,7 @@
             <!-- <a href="">Forgot password?</a> -->
           </div>
 
-          <button type="submit" class="btn">Sign Up</button>
+          <button type="submit" class="btn" id="signUpBtn">Sign Up</button>
 
           <div class="SignUp-link">
             <p>
@@ -269,6 +269,23 @@
                 window.location.href = "index.html";
             } else {
                 alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+            }
+        });
+
+        document.getElementById("signUpBtn").addEventListener("click", function () {
+          const isUsernameValid = validateUsername(signUpuser); //ktra user
+          const isPasswordValid = validatePassword(signUpPassword); //và pass
+          const isMailValid = validateEmail(signUpemail); 
+
+          const username = signUpuser.value; //lấy giá trị nhập vào
+          const password = signUpPassword.value;
+          const email = signUpemail.value;
+
+            if (!isUsernameValid || !isPasswordValid || !isMailValid) { 
+                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+            }
+            else{
+              alert("Bạn đã tạo tài khoản thành công.")
             }
         });
       });
