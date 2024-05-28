@@ -40,6 +40,7 @@
   padding-left: 20px;
 }
 .item_name a {
+  font-weight: bold;
   display: block;
   margin-top: 20px;
 }
