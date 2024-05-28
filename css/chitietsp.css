@@ -221,7 +221,10 @@ body {
   color: red;
   border: 1px solid red;
 }
-
+.buy-now a {
+  text-decoration: none;
+  color: white;
+}
 .actions .add-to-cart:hover {
   background-color: pink;
 }
