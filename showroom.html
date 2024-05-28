@@ -1,42 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Showroom </title>
-    <link rel="stylesheet" href="./css/showroom.css">
-</head>
-<body>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/showroom.css" />
+    <title>Showroom</title>
+  </head>
+  <body>
+    <div class="headerimg"><img src="./img/headerimg.webp" alt="" /></div>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href=""><i class="fa-solid fa-house"></i>Home</a>
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="header-showroom">
+        <a href="./showroom.html" class="hover"
+          ><i class="ti-location-pin"></i>Showroom</a
+        >
+      </div>
+      <div class="giohang">
+        <a class="hover" href="./buycart.html"
+          ><i class="fa-solid fa-cart-shopping"></i>Giỏ hàng</a
+        >
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="./chuot.html">Chuột</a></li>
+          <li><a href="./case.html">Case máy tính</a></li>
+          <li><a href="./manhinh.html">Màn hình</a></li>
+          <li><a href="./banphim.html">Bàn phím</a></li>
+          <li><a href="./tainghe.html">Tai nghe</a></li>
+          <li><a href="./padchuot.html">Pad chuột</a></li>
+          <li><a href="./ram.html">Ram/SSD</a></li>
+        </ul>
+      </div>
+      <script>
+        let press = 0;
+        function showmenu(n) {
+          let menu = document.getElementsByClassName("menu_list");
+          press = press + n;
+          if (press > 1) {
+            press = 0;
+          }
+          if (press % 2 != 0) {
+            menu[0].style.display = "block";
+          } else {
+            menu[0].style.display = "none";
+          }
+        }
+      </script>
+      <div class="container">
         <div class="left">
-            <h1>SHOWROOM LAPTOP</h1>
-            <h2>EPU</h2>
-            <hr>
-            <p><img src="./img/sr1.png" alt="Home"> 235 Hoàng Quốc Việt, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
-            <p><img src="./img/sr2.png" alt="Clock"> Thời gian làm việc: 8:00 - 21:00 | Thứ 2 - Chủ Nhật.</p>
-            <p><img src="./img/sr3.png" alt="Facebook"> Truy cập Fanpage LAPTOP EPU</p>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9079193192995!2d105.82054831540261!3d21.03575869292133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8d0f07e0b5%3A0x9552a9e0f2578f2e!2sGEARVN%20Th%C3%A1i%20H%C3%A0!5e0!3m2!1sen!2s!4v1684849180296!5m2!1sen!2s" 
-                width="400" 
-                height="300" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+          <h1>SHOWROOM LAPTOP</h1>
+          <h2>EPU</h2>
+          <hr />
+          <p>
+            <img src="./img/sr1.png" alt="Home" /> 235 Hoàng Quốc Việt, Cổ Nhuế,
+            Bắc Từ Liêm, Hà Nội
+          </p>
+          <p>
+            <img src="./img/sr2.png" alt="Clock" /> Thời gian làm việc: 8:00 -
+            21:00 | Thứ 2 - Chủ Nhật.
+          </p>
+          <p>
+            <img src="./img/sr3.png" alt="Facebook" /> Truy cập Fanpage LAPTOP
+            EPU
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9079193192995!2d105.82054831540261!3d21.03575869292133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8d0f07e0b5%3A0x9552a9e0f2578f2e!2sGEARVN%20Th%C3%A1i%20H%C3%A0!5e0!3m2!1sen!2s!4v1684849180296!5m2!1sen!2s"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
         </div>
         <div class="right">
-            <div class="image-slider">
-                <button class="arrow" id="prev">&#9664;</button>
-                <img src="./img/image1.jpg" alt="Showroom Image" id="slider-image">
-                <button class="arrow" id="next">&#9654;</button>
-            </div>
-            <div class="address">
-                <p><img src="./img/sr4.png" alt="Location"> 235 Hoàng Quốc Việt</p>
-                <p>Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
-            </div>
+          <div class="image-slider">
+            <button class="arrow" id="prev">&#9664;</button>
+            <img
+              src="./img/image1.jpg"
+              alt="Showroom Image"
+              id="slider-image"
+            />
+            <button class="arrow" id="next">&#9654;</button>
+          </div>
+          <div class="address">
+            <p>
+              <img src="./img/sr4.png" alt="Location" /> 235 Hoàng Quốc Việt
+            </p>
+            <p>Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+          </div>
         </div>
+      </div>
     </div>
     <script src="showroom.js"></script>
-</body>
+    <div class="footer">
+      <p class="address">Address: Liên Hà, Đan Phượng, Hà Nội</p>
+      <p>Contact us: 0357262281</p>
+    </div>
+  </body>
 </html>
