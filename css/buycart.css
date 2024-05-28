@@ -48,7 +48,7 @@
 .thanhtien {
   border-top: 1px solid gray;
   width: 680px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 .tinhtien {
   display: flex;
