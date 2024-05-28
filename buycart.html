@@ -13,6 +13,12 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/buycart.css" />
+    <script>
+      function del(n) {
+        let del_it = document.getElementsByClassName("bought_item");
+        del_it[n].style.display = "none";
+      }
+    </script>
     <title>Buy-cart</title>
   </head>
   <body>
@@ -79,8 +85,8 @@
         <div class="bought_item">
           <div class="item_preview">
             <div><img src="./img/product.jpg" alt="" /></div>
-            <div>
-              <a href=""><i class="fa-regular fa-trash-can"></i>Xóa</a>
+            <div class="del">
+              <a onclick="del(0)"><i class="fa-regular fa-trash-can"></i>Xóa</a>
             </div>
           </div>
           <div class="item_name"><a href="">laptop vl</a></div>
@@ -94,8 +100,8 @@
         <div class="bought_item">
           <div class="item_preview">
             <div><img src="./img/product.jpg" alt="" /></div>
-            <div>
-              <a href=""><i class="fa-regular fa-trash-can"></i>Xóa</a>
+            <div class="del">
+              <a onclick="del(1)"><i class="fa-regular fa-trash-can"></i>Xóa</a>
             </div>
           </div>
           <div class="item_name"><a href="">laptop vl</a></div>
@@ -109,8 +115,8 @@
         <div class="bought_item">
           <div class="item_preview">
             <div><img src="./img/product.jpg" alt="" /></div>
-            <div>
-              <a href=""><i class="fa-regular fa-trash-can"></i>Xóa</a>
+            <div class="del">
+              <a onclick="del(2)"><i class="fa-regular fa-trash-can"></i>Xóa</a>
             </div>
           </div>
           <div class="item_name"><a href="">laptop vl</a></div>

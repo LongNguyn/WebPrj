@@ -223,6 +223,9 @@ body {
   color: red;
   border: 1px solid red;
 }
+.add-to-cart a {
+  color: red;
+}
 .buy-now a {
   text-decoration: none;
   color: white;
@@ -237,5 +240,5 @@ body {
 }
 
 .actions .buy-now:hover {
-  background-color: blue;
+  background-color: rgb(143, 5, 28);
 }
