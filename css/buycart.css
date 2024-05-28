@@ -80,7 +80,11 @@
 }
 .confirm:hover {
   cursor: pointer;
+  background-color: brown;
 }
 .bought_item {
-  display: none;
+  /* display: none; */
+}
+.del :hover {
+  color: red;
 }
