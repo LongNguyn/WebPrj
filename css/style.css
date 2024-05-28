@@ -86,6 +86,9 @@ body {
 .ti-user {
   margin-right: 10px;
 }
+.ti-location-pin{
+  margin-right: 10px;
+}
 .header .hover:hover {
   cursor: pointer;
 }
