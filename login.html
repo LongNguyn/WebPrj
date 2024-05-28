@@ -133,48 +133,36 @@
         const forgotPassBtn = document.querySelector(".backToSignInBtn-link");
         const forgotPassForm = document.getElementById("forgotPasswordForm");
         const forgotPasswordLinks =
-          document.querySelectorAll(".remember-forgot a");
+          document.querySelectorAll(".remember-forgot a"); //lấy tất cả thẻ a là con class remember
 
-        signUpBtn.addEventListener("click", (e) => {
+        signUpBtn.addEventListener("click", (e) => { //bấm vào SignUp thì 2 cái kia 0 hiện
           e.preventDefault(); // Ngăn chặn trang tải lại
-          signInForm.style.display = "none";
+          signInForm.style.display = "none"; 
           signUpForm.style.display = "block";
           forgotPassForm.style.display = "none";
         });
 
         signInBtn.addEventListener("click", (e) => {
-          e.preventDefault(); // Ngăn chặn trang tải lại
+          e.preventDefault(); 
           signUpForm.style.display = "none";
           signInForm.style.display = "block";
           forgotPassForm.style.display = "none";
         });
 
         forgotPassBtn.addEventListener("click", (e) => {
-          e.preventDefault(); // Ngăn chặn trang tải lại
+          e.preventDefault(); 
           signUpForm.style.display = "none";
           signInForm.style.display = "block";
           forgotPassForm.style.display = "none";
         });
 
-        forgotPasswordLinks.forEach((link) => {
+        forgotPasswordLinks.forEach((link) => { //duyệt từng cái
           link.addEventListener("click", (e) => {
-            e.preventDefault(); // Ngăn chặn trang tải lại
+            e.preventDefault(); 
             signUpForm.style.display = "none";
             signInForm.style.display = "none";
             forgotPassForm.style.display = "block";
           });
-        });
-
-        document.getElementById("LoginBtn").addEventListener("click", function () {
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-
-            if (username && password) {
-                // Kiểm tra cả username và password đã được điền
-                window.location.href = "index.html";
-            } else {
-                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
-            }
         });
 
         document
@@ -182,9 +170,101 @@
           .addEventListener("click", function () {
             alert("Pass mới là 12"); // Hiển thị thông báo mật khẩu mới
           });
+
+              // Kiểm tra và thay đổi màu viền của ô nhập liệu
+        const usernameInput = document.querySelector("#signInForm input[placeholder='Username']"); //lấy Username ở sign in
+        const passwordInput = document.querySelector("#signInForm input[placeholder='Password']"); //lấy pass ở sign in
+        const signUpemail = document.querySelector("#signUpForm input[placeholder='Email']"); //lấy mail ở sigup
+        const signUpuser = document.querySelector("#signUpForm input[placeholder='Username']"); //lấy Username ở sign up
+        const signUpPassword = document.querySelector("#signUpForm input[placeholder='Password']"); //lấy pass ở sign up
+        const forgotPassInput = document.querySelector("#forgotPasswordForm input[placeholder='Email or Username']"); //lấy user hoặc mail ở phần quên pass
+        function validateUsername(input) { //kiểm tra tên đăng nhập
+          const value = input.value; 
+          const hasLetters = /[a-zA-Z]/.test(value); 
+          const hasNumbers = /[0-9]/.test(value);
+
+          if (value && hasLetters && hasNumbers) { //nếu chứa cả chữ và số và 0 rỗng
+            input.style.border = "1px solid greenyellow";
+            return true;
+          } else if (value === "") {
+            input.style.border = "";
+            return false;
+          } else {
+            input.style.border = "1px solid red";
+            return false;
+          }
+        }
+
+        function validatePassword(input) { //kiểm tra pass
+          const value = input.value;
+
+          if (value && value.length > 7) {
+            input.style.border = "1px solid greenyellow";
+            return true;
+          } else if (value === "") {
+            input.style.border = "";
+            return false;
+          } else {
+            input.style.border = "1px solid red";
+            return false;
+          }
+        }
+
+        function validateEmail(input) { // kiểm tra mail
+            const value = input.value;
+            const checkMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; 
+
+            if (value && checkMail.test(value)) {
+              input.style.border = "1px solid greenyellow";
+              return true;
+            } else if (value === "") {
+              input.style.border = "";
+              return false;
+            } else {
+              input.style.border = "1px solid red";
+              return false;
+            }
+          }
+
+        usernameInput.addEventListener("input", () => { //Nhập vào user thì gọi hàm ktra
+          validateUsername(usernameInput);
+        });
+
+        passwordInput.addEventListener("input", () => { 
+          validatePassword(passwordInput);
+        });
+
+        signUpuser.addEventListener("input", () => { 
+          validateUsername(signUpuser);
+        });
+
+        signUpPassword.addEventListener("input", () => { //ktra pass ở sign up
+          validatePassword(signUpPassword);
+        });
+
+        signUpemail.addEventListener("input", () => { //kiểm tra mail ở sign up
+          validateEmail(signUpemail);
+        });
+
+        forgotPassInput.addEventListener("input", () => { //kiểm tra mail ở forgot
+          validateEmail(forgotPassInput);
+          validateUsername(forgotPassInput);
+        });
+
+        document.getElementById("LoginBtn").addEventListener("click", function () {
+          const isUsernameValid = validateUsername(usernameInput); //ktra user
+          const isPasswordValid = validatePassword(passwordInput); //và pass
+    
+          const username = usernameInput.value; //lấy giá trị nhập vào
+          const password = passwordInput.value;
+
+            if (isUsernameValid && isPasswordValid) { //nếu hợp lệ thì bay sang index
+                window.location.href = "index.html";
+            } else {
+                alert("Vui lòng nhập đầy đủ tên đăng nhập và mật khẩu.");
+            }
+        });
       });
-
-
     </script>
   </body>
 </html>
