@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/chitietsp.css" />
+    <title>Chi tiết sản phẩm</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu">
+        <a class="hover" onclick="showmenu(1)"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <div class="Home">
+        <a class="hover" href="./index.html"
+          ><i class="fa-solid fa-house"></i>Home</a
+        >
+      </div>
+      <div class="Search">
+        <input
+          id="search"
+          type="text"
+          placeholder="Tìm kiếm"
+          aria-label="Tìm kiếm"
+        />
+      </div>
+      <button class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <div class="giohang">
+        <a class="hover" href="./buycart.html"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+      </div>
+      <div class="Login">
+        <a class="hover" href="./login.html"><i class="ti-user"></i>Login</a>
+      </div>
+    </div>
+    <div class="main_content">
+      <div class="menu_list">
+        <ul>
+          <li><a href="./lapgaming.html">Laptop gaming</a></li>
+          <li><a href="./lapvp.html">Laptop văn phòng</a></li>
+          <li><a href="./chuot.html">Chuột</a></li>
+          <li><a href="./case.html">Case máy tính</a></li>
+          <li><a href="./manhinh.html">Màn hình</a></li>
+          <li><a href="./banphim.html">Bàn phím</a></li>
+          <li><a href="./tainghe.html">Tai nghe</a></li>
+          <li><a href="./padchuot.html">Pad chuột</a></li>
+          <li><a href="./ram.html">Ram/SSD</a></li>
+        </ul>
+      </div>
+      <script>
+        let press = 0;
+        function showmenu(n) {
+          let menu = document.getElementsByClassName("menu_list");
+          press = press + n;
+          if (press > 1) {
+            press = 0;
+          }
+          if (press % 2 != 0) {
+            menu[0].style.display = "block";
+          } else {
+            menu[0].style.display = "none";
+          }
+        }
+      </script>
+      <div class="container">
+        <div class="product-page">
+          <div class="product-images">
+            <img
+              src="./img/tn11.jpg"
+              alt="Main Product Image"
+              class="main-image"
+            />
+            <div class="thumbnail-images">
+              <img src="./img/tn11.jpg" alt="Thumbnail 1" />
+              <img src="./img/tn12.jpg" alt="Thumbnail 2" />
+              <img src="./img/tn13.jpg" alt="Thumbnail 3" />
+              <img src="./img/tn13.jpg" alt="Thumbnail 4" />
+              <img src="./img/tn13.jpg" alt="Thumbnail 5" />
+            </div>
+            <div class="share-icons">
+              <span>Chia sẻ: </span>
+              <a href="#"><img src="./img/fb.jpg" alt="Facebook" /></a>
+              <a href="#"><img src="./img/messenger.jpg" alt="Messenger" /></a>
+              <a href="#"><img src="./img/twitter.jpg" alt="Twitter" /></a>
+            </div>
+          </div>
+          <div class="product-details">
+            <h1>Tai nghe Razer Hammerhead True Wireless HyperSpeed (Playstation)</h1>
+            <div class="reviews">
+              <span class="rating">4.9</span>
+              <span class="reviews-count">944 Đánh Giá</span>
+              <span class="sales">4,1k Đã Bán</span>
+            </div>
+            <div class="flash-sale">
+              <span class="flash-sale-label">FLASH SALE</span>
+            </div>
+            <div class="price">
+              <span class="original-price">18.990.000₫</span>
+              <span class="discounted-price">25.890.000₫</span>
+              <span class="discount">11% GIẢM</span>
+            </div>
+            <div class="shipping">
+              <span>Vận Chuyển</span>
+              <div class="shipping-methods">
+                <span>Xử lý đơn hàng bởi Shopee</span>
+                <span>Miễn phí vận chuyển</span>
+                <span>Vận Chuyển Tới Huyện Ba Vì</span>
+              </div>
+            </div>
+            <div class="variants">
+              <span>Phân Loại</span>
+              <div class="variant-options">
+                <button>
+                  <a class="options" onclick="higlight(0)">Titan - Tự Nhiên</a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(1)">Titan - Xanh</a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(2)">Titan - Trắng</a>
+                </button>
+                <button>
+                  <a class="options" onclick="higlight(3)">Titan - Đen</a>
+                </button>
+                <script>
+                  let choose = 0;
+                  function higlight(n) {
+                    let option = document.getElementsByClassName("options");
+                    choose = choose + 1;
+                    if (choose > 1) {
+                      choose = 0;
+                    }
+                    if (choose % 2 != 0 && n == 0) {
+                      option[n].style.color = "red";
+                      option[1].style.color = "black";
+                      option[2].style.color = "black";
+                      option[3].style.color = "black";
+                    } else {
+                      option[0].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 1) {
+                      option[0].style.color = "black";
+                      option[n].style.color = "red";
+                      option[2].style.color = "black";
+                      option[3].style.color = "black";
+                    } else {
+                      option[1].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 2) {
+                      option[0].style.color = "black";
+                      option[1].style.color = "black";
+                      option[2].style.color = "red";
+                      option[3].style.color = "black";
+                    } else {
+                      option[2].style.color = "black";
+                    }
+                    if (choose % 2 == 0 && n == 3) {
+                      option[0].style.color = "black";
+                      option[1].style.color = "black";
+                      option[2].style.color = "black";
+                      option[3].style.color = "red";
+                    } else {
+                      option[3].style.color = "black";
+                    }
+                  }
+                </script>
+              </div>
+            </div>
+            <div class="quantity">
+              <span>Số Lượng</span>
+              <input type="number" value="1" min="1" />
+              <span>138 sản phẩm có sẵn</span>
+            </div>
+            <div class="actions">
+              <button class="add-to-cart">
+                <img
+                  src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/productdetailspage/b96050554b3be4feea08.svg"
+                  alt="LOGO "
+                />
+                <span>Thêm vào giỏ hàng</span>
+              </button>
+              <button class="buy-now">
+                <a href="./payment.html">Mua ngay</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="address">Address: Liên Hà, Đan Phượng, Hà Nội</p>
+      <p>Contact us: 0357262281</p>
+    </div>
+  </body>
+</html>
